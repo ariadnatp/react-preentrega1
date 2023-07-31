@@ -1,8 +1,7 @@
 import './navbar.css'
 import flag from "../assets/flag.png"
-import carro from "../assets/carro.png"
 import search from "../assets/search.png"
-
+import { CardWidget } from './CardWidget'
 export const NavBar = () => {
     return (
         <>
@@ -26,8 +25,8 @@ export const NavBar = () => {
                             <input className="form-control me-2" id="filtroNombre" type="search" placeholder="Buscar" aria-label="Search"/>
                             <button className="btn btn-outline-secondary btnBuscar" id="botonNombre" type="submit"><img src={search} alt="busqueda logo" /></button>
                         </form>
-                        <div className="nav-item navFlex">
-                            <button className="btn btn-outline-secondary btnCarrito" id="carritoBtn"><img src={carro} alt="carrito" /></button>
+                        <div>
+                            <CardWidget/>
                         </div>
                     </div>
                 </div>
