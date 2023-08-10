@@ -1,6 +1,7 @@
 import './navbar.css'
 import flag from "../assets/flag.png"
 import search from "../assets/search.png"
+import {Link} from 'react-router-dom' 
 import { CardWidget } from './CardWidget'
 export const NavBar = () => {
     return (
@@ -18,7 +19,7 @@ export const NavBar = () => {
                                 <a className="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="./index.html">Catálogo</a>
+                                <Link to="/Producto">Catálogo</Link>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
