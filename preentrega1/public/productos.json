@@ -43,5 +43,41 @@
         "precio": 6200,
         "color": "rosa",
         "talle": "S - M - XL - XXL"
+    },
+    {
+        "id": 6,
+        "foto": "https://i.postimg.cc/Y0nbkZyx/20.jpg",
+        "nombre": "Rosa Sweat",
+        "edicion": "Edición Lisos",
+        "precio": 4000,
+        "color": "rosa",
+        "talle": "M - XL"
+    },
+    {
+        "id": 7,
+        "foto": "https://i.postimg.cc/TY1tQ2pN/18.jpg",
+        "nombre": "Verde Forest",
+        "edicion": "Edición Lisos",
+        "precio": 4000,
+        "color": "verde",
+        "talle": "S"
+    },
+    {
+        "id": 8,
+        "foto": "https://i.postimg.cc/Kjf80S8x/15.jpg",
+        "nombre": "Verde Autumn",
+        "edicion": "Edición Lisos",
+        "precio": 4000,
+        "color": "verde",
+        "talle": "S - M - XL - XXL"
+    },
+    {
+        "id": 9,
+        "foto": "https://i.postimg.cc/x1YPkLWm/16.jpg",
+        "nombre": "Violeta Light",
+        "edicion": "Edición Lisos",
+        "precio": 4000,
+        "color": "violeta",
+        "talle": "S - M - XL - XXL"
     }
 ]

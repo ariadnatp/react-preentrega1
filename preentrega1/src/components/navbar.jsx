@@ -1,7 +1,6 @@
 import './navbar.css'
 import flag from "../assets/flag.png"
 import search from "../assets/search.png"
-import Producto from "../routes/Catalogo.jsx";
 import { CardWidget } from './CardWidget'
 import { Link } from 'react-router-dom'
 export const NavBar = () => {
@@ -17,10 +16,16 @@ export const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            <Link to="/Inicio" className="navStyle">Inicio</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/Catalogo">Catálogo</Link>
+                                <Link to="/Catalogo" className="navStyle">Catálogo</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/Catalogo" className="navStyle">Catálogo</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/Edicion-Space" className="navStyle">Edición Space</Link>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">

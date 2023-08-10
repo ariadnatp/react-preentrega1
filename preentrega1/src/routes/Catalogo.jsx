@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react';
-// import {BrowserRouter, Link} from "react-router-dom";
+import { Link, useHistory } from 'react-router-dom';
 
 export const Producto = () => {
   const [productos, setProductos] = useState([]);
+  const history = useHistory();
+  const handleOpenIndividualProduct = (productId) => {
+    history.push(`/productos/${productId}`);
+  };
+  
   useEffect(() => {
     fetch('/productos.json')
       .then((response) => response.json())
@@ -24,7 +29,7 @@ export const Producto = () => {
             <div className="card-body">
               <h3 className="card-title">{producto.nombre}</h3>
               <p className="card-text text-primary">{producto.edicion}</p>
-              {/* <Link key={producto.id} to={`/productos/${producto.id}`}>VER</Link> */}
+              <Link to="/productos/:productId">VER</Link>
             </div>
           </div>
         );
