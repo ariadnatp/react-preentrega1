@@ -5,7 +5,7 @@ import flag from "./assets/flag.png"
 import {Producto} from "./routes/Catalogo.jsx"
 import { NavBar } from './components/navbar.jsx'
 import { ItemListContainer } from './components/ItemListConteiner'
-import { BrowserRouter, Router, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {BrowserRouter, Link} from "react-router-dom";
+// import {BrowserRouter, Link} from "react-router-dom";
 
 export const Producto = () => {
   const [productos, setProductos] = useState([]);
@@ -22,11 +22,11 @@ export const Producto = () => {
               style={{ width: 300 }}
             />
             <div className="card-body">
-            <h3 class="card-title">${producto.nombre}</h3>
-            <p class="card-text text-primary">${producto.edicion}</p>
-            <p class="card-text">$ ${producto.precio}</p>
-            <p class="card-text">Color: ${producto.color}</p>
-            <p class="card-text">Talle: ${producto.talle}</p>
+            <h3 class="card-title">{producto.nombre}</h3>
+            <p class="card-text text-primary">{producto.edicion}</p>
+            <p class="card-text">$ {producto.precio}</p>
+            <p class="card-text">Color: {producto.color}</p>
+            <p class="card-text">Talle: {producto.talle}</p>
           <button id="${producto.id}" class="btn btn-primary compra">Comprar</button>
 
             </div>
