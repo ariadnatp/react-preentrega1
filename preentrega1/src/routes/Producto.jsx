@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import {BrowserRouter, Link} from "react-router-dom";
 
-export const ProdIndividual = () => {
+export const Producto = () => {
   const [productos, setProductos] = useState([]);
   useEffect(() => {
     fetch('/productos.json')

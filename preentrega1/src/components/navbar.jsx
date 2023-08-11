@@ -22,16 +22,13 @@ export const NavBar = () => {
                                 <Link to="/Catalogo" className="navStyle">Catálogo</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/Catalogo" className="navStyle">Catálogo</Link>
-                            </li>
-                            <li className="nav-item">
                                 <Link to="/Edicion-Space" className="navStyle">Edición Space</Link>
                             </li>
                         </ul>
-                        <form className="d-flex" role="search">
+                        {/* <form className="d-flex" role="search">
                             <input className="form-control me-2" id="filtroNombre" type="search" placeholder="Buscar" aria-label="Search"/>
                             <button className="btn btn-outline-secondary btnBuscar" id="botonNombre" type="submit"><img src={search} alt="busqueda logo" /></button>
-                        </form>
+                        </form> */}
                         <div>
                             <CardWidget/>
                         </div>
